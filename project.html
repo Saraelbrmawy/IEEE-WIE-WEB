@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+	
+    <title>نسبة الزكاة</title>
+    <script src="project.js"></script>
+    <style>
+
+h1 {color: #2a12a0; text-align: center;}
+h2 {color: #2a12a0; text-align: center;}
+.form-group{color: #1226ab; text-align: center; }
+body {background: #111111;}
+.btn-primary{color: #38086f;}
+
+    </style>
+</head>
+<body>
+    <h1>حساب نسبة زكاة المال</h1>
+    <form>
+        <div class="form-group">
+            <label for="amount">ادخل قيمة المال </label>
+            <input type="number" class="form-control" id="amount" placeholder="ادخل القيمة">
+            <button type="button" class=" btn-primary" onclick="calculate()">حساب النسبة</button>
+        </div>
+
+        
+    </form>
+    <div class="mt-5">
+        <h2 id="result" class="text-center"></h2>
+    </div>
+    <script>
+		function calculate() {
+			var amount = document.getElementById("amount").value;
+			var zakat = amount * 0.025;
+			document.getElementById("result").innerHTML = "نسبة زكاتك هي: " + zakat ;
+		}
+	</script>
+</body>
+</html>
