@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تحويل العملات</title>
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card small-rectangle">
+          <div class="card-body">
+            <h1 class="text-center mb-4">تحويل الجنيه إلى الدولار</h1>
+            <div class="form-group">
+              <label for="pounds">أدخل المبلغ بالجنيه:</label>
+              <input type="number" id="pounds" class="form-control">
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary mt-3 btn-block" onclick="convertToDollars()">تحويل إلى الدولار</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        <div class="card small-rectangle">
+          <div class="card-body">
+            <h1 class="text-center mb-4">تحويل الدولار إلى الجنيه</h1>
+            <div class="form-group">
+              <label for="dollars">أدخل المبلغ بالدولار:</label>
+              <input type="number" id="dollars" class="form-control">
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary mt-3 btn-block" onclick="convertToPounds()">تحويل إلى الجنيه</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  >
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
